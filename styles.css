@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Evita que el fondo se extienda más allá del área visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+.timer-container {
+    text-align: center;
+    position: relative; /* Asegura que el contenido esté posicionado en relación con el body */
+    z-index: 1; /* Asegura que el contenido esté sobre el fondo */
+}
+
+.timer-display {
+    font-size: 2.5em;
+    background-color: #4285f4;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timer-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 50px;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4285f4;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ae8;
+}

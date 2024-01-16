@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temporizador</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="timer-container">
+            <div class="timer-display" id="timer">00:00</div>
+            <div class="timer-controls">
+                <input type="number" id="minutes" placeholder="Min" min="0" max="60">
+                <input type="number" id="seconds" placeholder="Seg" min="0" max="59">
+                <button onclick="startTimer()">Iniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agrega el elemento de audio -->
+    <audio id="audio" src="beep.mp3" autoplay></audio>
+    <script src="script1.js"></script>
+</body>
+</html>
